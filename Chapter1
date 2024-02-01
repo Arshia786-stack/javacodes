@@ -1,0 +1,103 @@
+// sum of 3 no.s(hardcore)
+public class Main {
+    public static void main(String[] args) {
+        int a = 4;
+        int b = 6;
+        int c = 10;
+        int sum = a+b+c
+        System.out.println(sum);
+    }
+}
+
+// check whether the integer is input or not 
+import java.util.Scanner;
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner (System.in);
+        System.out.println(sc.hasNextInt());
+    }
+}
+
+// sum of three no.s with input
+import java.util.Scanner;
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner (System.in);
+        System.out.println("Enter first number");
+        int a = sc.nextInt();
+        System.out.println("Enter second number");
+        int b = sc.nextInt();
+        System.out.println("Enter third number");
+        int c = sc.nextInt();
+        int sum = a + b + c;
+        System.out.println("Sum of the three numbers is" + sum);
+    }
+}
+
+// Exercise 1: write a program to calculate the percentage of a given student in CBSE board exam. His marks from 5 subjects must be taken as input. (marks out of 100)
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner S = new Scanner(System.in);
+        System.out.println("Enter 1st subject : ");
+        int a = S.nextInt();
+        System.out.println("Enter 2nd subject : ");
+        int b = S.nextInt();
+        System.out.println("Enter 3rd subject : ");
+        int c = S.nextInt();
+        System.out.println("Enter 4th subject : ");
+        int d = S.nextInt();
+        System.out.println("Enter 5th subject : ");
+        int e = S.nextInt();
+        int TotalMarks = a+b+c+d+e;
+        System.out.println("total marks : " + TotalMarks);
+        float percent = TotalMarks/5f;
+        System.out.println("Percentage : " + percent);
+        
+    }
+}
+import java.util.Scanner;
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner (System.in);
+        System.out.println("Enter marks of first subject");
+        int a = sc.nextInt();
+        System.out.println("Enter 2nd sub");
+        int b = sc.nextInt();
+        System.out.println("3rd sub");
+        int c = sc.nextInt();
+        System.out.println("4th sub");
+        int d = sc.nextInt();
+        System.out.println("5th sub");
+        int e = sc.nextInt();
+        float percent = ((float)(a + b + c + d + e)/500) * 100;
+        System.out.println("your percent is" + percent);
+    }
+}
+//Write a program which asks the user to enter his/her name and treats them with “Hello <name>, have a good day.”
+
+import java.util.Scanner;
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner (System.in);
+        System.out.println("Please enter your name");
+        String name = sc.nextLine();
+        System.out.println("Hello " + name + ", have a good day");
+        
+    }
+}
+//km to miles
+
+import java.util.Scanner;
+public class Main {
+    public static void main(String[] args) {
+        System.out.println("Enter no. of kilometers");
+        Scanner sc = new Scanner (System.in);
+        double km = sc.nextDouble();
+        double miles = km * 0.621371;
+        System.out.println("miles is" + miles);
+        
+        
+    }
+}
